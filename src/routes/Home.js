@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 // import { connect } from "react-redux"; // connet는 2개의 argument를 가진다 - mapStateToProps, mapDispatchToProps
-import { addTodo, deleteTodo } from "../store";
+import { addTodo, deleteTodo } from "../redux/store";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
-// mapStateToProps()을 이용해서 todos를 prop으로 전달
 const Home = () => {
   const [text, setText] = useState("");
 
